@@ -1,2 +1,2 @@
-# library-managerment
-Library Managerment System
+# library-management
+Library Management System
