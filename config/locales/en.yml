@@ -2,5 +2,17 @@ en:
   layouts:
     header:
       login: 'Login'
-      signup: 'Signup'
       search: 'Nhập tên sách, tuyển tập, tác giả,...'
+      signup: 'Signup'
+    footer:
+      about: 'About'
+      contact: 'Contact'
+      copyright: '@ Copyright by MTG'
+      news: 'News'
+  books:
+    index:
+      detail: 'Detail'
+      list: 'List books'
+      next: 'Next'
+      previous: 'Previous'
+      
