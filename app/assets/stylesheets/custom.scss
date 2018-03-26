@@ -39,9 +39,9 @@
 }
     
 /* footer */
-footer {
+#footer {
   background-color: #f2f2f2;
-  padding: 25px;
+  padding-top: 20px;
 small {
     float: left;
   }
@@ -50,7 +50,10 @@ small {
     list-style: none;
     li {
       float: left;
-      margin-left: 35px;
+      margin-left: 55px;
     }
   }
 }
+#sidenav {
+      background-color: #f1f1f1;
+    }

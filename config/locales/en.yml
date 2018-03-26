@@ -15,4 +15,6 @@ en:
       list: 'List books'
       next: 'Next'
       previous: 'Previous'
+    show:
+      request: 'Request'
       
