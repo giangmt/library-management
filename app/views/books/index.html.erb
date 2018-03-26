@@ -4,18 +4,18 @@
   <h3><%= t ".list" %></h3><hr>
   <div class="row">
     <% @books.each do |book| %>
-    <div class="col-sm-3">
+    <div class="col-md-3">
       <div class="thumbnail">
-          <%= image_tag book.image %>
-          <h4><%= book.name %></h4>
-          <p><%= link_to book.author.name %></p>
-          <button class="btn btn-success"><%= t '.detail' %></button>
-        </div>
+        <%= image_tag book.image %>
+        <h5><strong><%= book.name %></strong></h5>
+        <h5><%= link_to book.author.name %></h5>
+        <%= link_to t(".detail"), book %>
+      </div>
     </div>
     <% end %>
   </div><hr>
   <ul class="pager">
-    <li><a href="#"><%= t '.previous' %></a></li>
-    <li><a href="#"><%= t '.next' %></a></li>
+    <li><%= link_to t ".previous" %></li>
+    <li><%= link_to t ".next" %></li>
   </ul> 
 </div>

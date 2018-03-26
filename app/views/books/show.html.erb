@@ -1,2 +1,47 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<%= provide :title, @books.name %>
+<div class="container-fluid"><br>
+  <div class="col-sm-9">
+  <h3><%= @books.name %> - <%= @books.author.name %></h3>
+  <hr>
+    <div class="col-sm-3">
+      <div class="thumbnail">
+      <%= image_tag @books.image %>
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <h5><%= t ".author" %>: <%= link_to @books.author.name %></h5>
+      <h5><%= t ".category" %>: <%= link_to @books.category.name %></h5>
+      <h5><%= t ".publisher" %>: <%= link_to @books.publisher.name %></h5>
+      <button class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#demo">
+        <%= t ".request" %>
+      </button>
+      <div id="demo" class="collapse">
+      <h5>From:...............To:............
+      <button class="btn btn-success btn-xs"><%= t ".borrow" %></button></h5>
+      </div><br><br>
+      <p><%= @books.description %></p>
+      <p><%= t ".invite_read" %> 
+      <strong><%= @books.author.name %> - <%= @books.name %>!</strong></p>
+    </div>
+    <div class="col-sm-12">
+      <hr>
+      <h4><%= t ".comment" %>:</h4>
+      <form role="form">
+      <div class="form-group">
+      <textarea class="form-control" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success"><%= t ".submit" %></button>
+      </form>
+      <br><br>
+    </div>
+  </div>
+  <div class="col-sm-3 text-center">
+    <h4>Book with the author</h4>
+    <div class="col-sm-8">
+      <div class="thumbnail">
+      <%= image_tag @books.image %>
+      <%= link_to @books.name, @books %>
+      </div>
+    </div>
+  </div>
+</div>

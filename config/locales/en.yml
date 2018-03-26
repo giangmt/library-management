@@ -1,18 +1,30 @@
 en:
   layouts:
     header:
-      login: 'Login'
-      search: 'Nhập tên sách, tuyển tập, tác giả,...'
-      signup: 'Signup'
+      library: "Library"
+      login: "Login"
+      search: "Nhập tên sách, tuyển tập, tác giả,..."
+      signup: "Signup"
     footer:
-      about: 'About'
-      contact: 'Contact'
-      copyright: '@ Copyright by MTG'
-      news: 'News'
+      about: "About"
+      contact: "Contact"
+      copyright: "@ Copyright by MTG"
+      news: "News"
+  button:
+    submit: "Submit"
   books:
     index:
-      detail: 'Detail'
-      list: 'List books'
-      next: 'Next'
-      previous: 'Previous'
+      detail: "DETAILS"
+      list: "List books"
+      next: "Next"
+      previous: "Previous"
+    show:
+      request: "REQUEST"
+      borrow: "BORROW"
+      author: "Author"
+      category: "Category"
+      publisher: "Publisher"
+      comment: "Leave a comment"
+      invite_read: "Welcome you to read"
+
       
