@@ -1,12 +1,8 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <div class="navbar-brand"><span class="glyphicon glyphicon-book"></span><%= link_to t(".library"), "/" , id: "logo" %></div>
+      <div class="navbar-brand"><%= link_to t(".library"), "/" , id: "logo", class:"glyphicon glyphicon-book" %>
+    </div>
     </div> 
     <form class="navbar-form navbar-left" action="#">
       <div class="input-group">
@@ -20,9 +16,10 @@
     </form> 
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   '#' %></li>
+        <li><%= link_to " Home", '/', class:"glyphicon glyphicon-home" %></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown"> Categories<b class="caret"></b>
+          </a>
           <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
             <li role="presentation" class="dropdown-header">SÁCH NÓI</li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Truyện đọc</a></li>
@@ -40,8 +37,24 @@
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kinh doanh tổng hợp</a></li> 
           </ul>
         </li>
-        <li><%= link_to " Signup", signup_path, class:"glyphicon glyphicon-user" %></li>
-        <li><%= link_to " Login", '#', class:"glyphicon glyphicon-log-in" %></li>
+        <% if logged_in? %>
+          <li><%= link_to "Users", '#' %></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Account <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Profile", current_user %></li>
+              <li><%= link_to "Settings", '#' %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to "Log out", logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to " Login", login_path, class:"glyphicon glyphicon-user" %></li>
+        <% end %>
       </ul>
     </nav>
   </div>
