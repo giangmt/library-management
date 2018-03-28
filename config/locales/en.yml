@@ -12,6 +12,11 @@ en:
       news: "News"
   button:
     submit: "Submit"
+  form:
+    confirm: "Confirmation"
+    create: "Create my account"
+  message:
+    
   books:
     index:
       detail: "DETAILS"

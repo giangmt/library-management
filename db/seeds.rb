@@ -23,10 +23,10 @@ Publisher.create!(name: 'NXB Thanh Niên')
 # Book
 Book.create!(name: 'Bậc thầy của nghệ thuật giao tiếp',
 						pages: '330',
-						author_id: 2,
+						author_id: 1,
 						image: 'https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/17289.jpg',
-						category_id: 2,
-						publisher_id: 2,
+						category_id: 1,
+						publisher_id: 1,
 						description: 'Dale Carnegie là bậc thầy nhân sinh vĩ đại của thế kỷ XX. Nửa thế kỷ trở lại đây, danh tiếng của ông ngày càng được nhiều người biết đến. Từ phương Tây sang phương Đông, các tác phẩm của Dale Carnegie được dịch ra mười thứ tiếng, gần như bất kỳ ngữ hệ nào cũng có những bản dịch sách của ông. Vì thế ông được coi là tác giả có lượng sách bán chạy lớn thứ hai trong lịch sử xuất bản nhân loại. Tờ Time của Mỹ từng viết: "Có lẽ ngoài Nữ thần Tự do, ông chính là biểu tượng của nước Mỹ".
 
 Từ một đứa trẻ nông thôn trở thành một danh nhân nổi tiếng thế giới, dựa vào đâu mà được như vậy? Đó là vấn đề khiến nhiều người suy nghĩ. Cho dù "Thất bại là mẹ thành công", nhưng ai chẳng hy vọng tìm ra bí quyết thành công để có thể thuận lợi đoạt được vòng nguyệt quế?
