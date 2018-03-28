@@ -31,5 +31,10 @@ en:
       publisher: "Publisher"
       comment: "Leave a comment"
       invite_read: "Welcome you to read"
+  sessions:
+    new:
+      signup_now: "Sign up now!"
+      new_user: "New user?"
+      remember: "Remember me on this computer"
 
       
